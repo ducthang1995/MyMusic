@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Vành tai nghe trái -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,20
+                          C8,24 8,40 12,44
+                          L18,44
+                          C16,38 16,26 18,20
+                          Z"/>
+
+    <!-- Vành tai nghe phải -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M52,20
+                          C56,24 56,40 52,44
+                          L46,44
+                          C48,38 48,26 46,20
+                          Z"/>
+
+    <!-- Dây nối tai nghe -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M18,20
+                          C18,14 46,14 46,20
+                          L46,24
+                          C46,30 18,30 18,24
+                          Z"/>
+
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Nền trắng hoặc màu chủ đạo -->
+    <background android:drawable="@color/white" />
+
+    <!-- Foreground là vector clef -->
+    <foreground android:drawable="@drawable/ic_app" />
+
+    <!-- (Tùy chọn) Hỗ trợ chế độ đơn sắc cho các launcher đặc biệt -->
+    <monochrome android:drawable="@drawable/ic_app" />
+</adaptive-icon>

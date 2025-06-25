@@ -1,0 +1,7 @@
+<!-- res/anim/shake.xml -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fromXDelta="-5"
+    android:toXDelta="5"
+    android:repeatCount="3"
+    android:repeatMode="reverse"/>

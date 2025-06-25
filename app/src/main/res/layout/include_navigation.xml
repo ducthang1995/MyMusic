@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <!-- Cụm điều khiển nhạc và tên bài hát -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#333333"
+        android:padding="8dp">
+
+        <!-- Nút điều khiển -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_button_transparent"
+                android:text="⏮"
+                android:textColor="#FFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="54dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/bg_button_transparent"
+                android:text="▶"
+                android:textColor="#FFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="49dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:text="⏭"
+                android:textColor="#FFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Tên bài hát nằm bên cạnh cụm điều khiển -->
+        <TextView
+            android:id="@+id/tvSongName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text=""
+            android:textColor="#FFFF"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+
+        <ImageView
+            android:id="@+id/iconFavorite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_love"
+            android:contentDescription="Yêu thích" />
+
+        <ImageView
+            android:id="@+id/iconFollow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_follow"
+            android:contentDescription="Theo dõi" />
+
+
+    </LinearLayout>
+
+    <!-- Navigation bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#444444"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:src="@drawable/ic_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Trang chủ" />
+
+        <!-- Các nút khác -->
+        <ImageButton
+            android:id="@+id/btnRanking"
+            android:src="@drawable/ic_ranking"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Bảng xếp hạng" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:src="@drawable/ic_search"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Tìm kiếm" />
+
+        <ImageButton
+            android:id="@+id/btnPlaylist"
+            android:src="@drawable/ic_playlist"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Danh sách phát" />
+
+        <ImageButton
+            android:id="@+id/btnUser"
+            android:src="@drawable/ic_userden"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Cài đặt" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Avatar -->
+        <ImageView
+            android:id="@+id/imgEditAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_user"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_user"
+            android:contentDescription="Ảnh đại diện"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button thay đổi ảnh -->
+        <Button
+            android:id="@+id/btnChangeAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thay đổi ảnh đại diện"
+            android:backgroundTint="#1DB954"
+            android:textColor="#FFFFFF" />
+
+        <!-- Tên người dùng -->
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên người dùng"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textPersonName"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1DB954"
+            android:padding="12dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1DB954"
+            android:padding="12dp" />
+
+        <!-- Mô tả ngắn -->
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Mô tả ngắn về bạn"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1DB954"
+            android:padding="12dp" />
+
+        <!-- Nút lưu -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu thay đổi"
+            android:backgroundTint="#1DB954"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

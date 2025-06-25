@@ -1,0 +1,19 @@
+<resources>
+    <!-- Style cho nút có chữ trắng -->
+    <style name="WhiteButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">#FFFFFF</item> <!-- chữ trắng -->
+    </style>
+
+    <!-- Theme chính của app với màu chữ trắng -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Màu chữ chính (textColorPrimary) -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- Màu chữ phụ -->
+        <item name="android:textColorSecondary">#FFFFFF</item>
+        <!-- Màu chữ chung -->
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- Áp style nút chữ trắng -->
+        <item name="android:buttonStyle">@style/WhiteButton</item>
+    </style>
+</resources>
